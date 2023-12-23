@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 800;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.heading {
+  display: flex;
+  margin: 10px;
+  background-color: lightgray;
+}
+
+.heading ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.list1,
+.list2 {
+  gap: 30px;
+}
+
+.nav {
+  display: flex;
+  margin: 10px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.nav li:hover,
+.list2 li:hover {
+  border-bottom: 1px solid grey;
+}
+
+.nav-list {
+  gap: 30px;
+}
+
+.main {
+  position: relative;
+  background-image: url(/taxi-car.jpg);
+  background-size: cover;
+  height: 800px;
+}
+
+.main-content {
+  position: absolute;
+  top: 30%;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cta {
+  margin: 50px;
+}
+
+.btn-style2 {
+  font-size: 14px;
+  font-weight: bold;
+  height: 50px;
+  width: 200px;
+  color: white;
+  border-radius: 20px;
+  border-color: orange;
+  background-color: transparent;
+}
+
+.btn-style1 {
+  font-size: 14px;
+  font-weight: bold;
+  height: 50px;
+  width: 200px;
+  border-radius: 20px;
+  border-color: orange;
+  background-color: transparent;
+}
+
+.btn-style1:hover,
+.btn-style2:hover {
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Header styles for mobile */
+  .heading {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .heading ul {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  /* Navigation styles for mobile */
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav li:hover {
+    border-bottom: none;
+  }
+
+  /* Main content styles for mobile */
+  .main-content {
+    width: 90%;
+  }
+
+  .btn-style1,
+  .btn-style2 {
+    width: 100%;
+    background-color: black;
+    color: white;
+  }
+}
